@@ -81,6 +81,18 @@ class Stuff {
   helloWorld() {
     return 'hello world'
   }
+  greeting(name) {
+    return `hello ${name}`
+  }
+  arrayUpToNthNum(num) {
+    let numArry = []
+    for (let i = 0; i < num; i++) {
+      numArry.push(i + 1)
+    }
+    console.log(numArry)
+    let stuff = [...numArry]
+    return stuff
+  }
 }
 
 module.exports = Stuff;

@@ -282,6 +282,34 @@ describe('Class stuff', () => {
 		});
 
 	});
+	describe('prints name when passed into to gretting func function ', () => {
+		let stuff;
+
+		beforeEach(() => {
+			stuff = new Stuff;
+		});
+		it('should return hello james  ', () => {
+
+			expect(stuff.greeting('james')).to.equal('hello james');
+		});
+
+	});
+
+	describe(' function that takes n and prints up to n ', () => {
+		let stuff;
+
+		beforeEach(() => {
+			stuff = new Stuff;
+		});
+		it('should return an array up to the 3 ', () => {
+
+			expect(stuff.arrayUpToNthNum(3)).to.equal([1, 2, 3]);
+		});
+		it('should return an array up to the 5 ', () => {
+
+			expect(stuff.arrayUpToNthNum(5)).to.equal([1, 2, 3, 4, 5]);
+		});
+	})
 
 
 	describe('fetch request ', () => {
