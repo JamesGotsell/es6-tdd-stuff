@@ -1,0 +1,51 @@
+{
+  "name": "es6-test-boilerplate",
+  "version": "1.0.1",
+  "description": "A boilerplate for testing ES6-Modules. It helps you build fast robust JavaScript. ES6-Modules preferred. Code Coverage included.",
+  "scripts": {
+    "test": "mocha  --compilers js:babel/register ",
+    "coverage": "babel-node ./node_modules/.bin/isparta cover --report text --report html _mocha -- --reporter progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RazorfishGermany/es6-test-boilerplate"
+  },
+  "bugs": "https://github.com/RazorfishGermany/es6-test-boilerplate",
+  "homepage": "https://github.com/RazorfishGermany/es6-test-boilerplate",
+  "keywords": [
+    "es6",
+    "mocha",
+    "chai",
+    "isparta",
+    "code coverage",
+    "sinon",
+    "sinon-chai",
+    "chai-as-promised",
+    "chai-dom",
+    "test",
+    "agile",
+    "tdd",
+    "bdd",
+    "clean code"
+  ],
+  "author": "martin.krause@razorfish.de",
+  "contributors": [],
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "node-fetch": "^1.7.3"
+  },
+  "devDependencies": {
+    "babel": "^5.8.29",
+    "chai": "^3.2.0",
+    "chai-as-promised": "^5.2.0",
+    "chai-dom": "^1.4.0",
+    "eslint": "^1.7.3",
+    "isparta": "^3.0.4",
+    "istanbul": "^0.3.17",
+    "jsdom": "^7.0.2",
+    "mocha": "^2.2.5",
+    "mockery": "^1.4.0",
+    "sinon": "^1.17.3",
+    "sinon-chai": "^2.8.0"
+  }
+}
