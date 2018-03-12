@@ -93,6 +93,16 @@ class Stuff {
     let stuff = [...numArry]
     return stuff
   }
+  arrayUpToNthNumTimes(num) {
+    let arr = []
+    for (let i = 0; i < num; i++) {
+      debugger
+      let numTimesNum = num * (i % num === 0)
+      arr.push(numTimesNum)
+      debugger
+    }
+    return arr
+  }
 }
 
 module.exports = Stuff;

@@ -295,19 +295,31 @@ describe('Class stuff', () => {
 
 	});
 
-	describe(' function that takes n and prints up to n ', () => {
+	xdescribe(' function that takes n and prints up to n ', () => {
+		let stuff;
+
+		beforeEach(() => {
+			stuff = new Stuff;
+		});
+		xit('should return an array up to the 3 ', () => {
+			expect(stuff.arrayUpToNthNum(3)).to.equal([1, 2, 3]);
+		});
+		xit('should return an array up to the 5 ', () => {
+			expect(stuff.arrayUpToNthNum(5)).to.equal([1, 2, 3, 4, 5]);
+		});
+	})
+
+	describe(' function that takes n multiplys by 5 or 3 ', () => {
 		let stuff;
 
 		beforeEach(() => {
 			stuff = new Stuff;
 		});
 		it('should return an array up to the 3 ', () => {
-
-			expect(stuff.arrayUpToNthNum(3)).to.equal([1, 2, 3]);
+			expect(stuff.arrayUpToNthNumTimes(3)).to.equal([3, 6, 9]);
 		});
-		it('should return an array up to the 5 ', () => {
-
-			expect(stuff.arrayUpToNthNum(5)).to.equal([1, 2, 3, 4, 5]);
+		it('should return an array up to the times 5 ', () => {
+			expect(stuff.arrayUpToNthNumTimes(5)).to.equal([5, 10, 15, 20, 25]);
 		});
 	})
 
